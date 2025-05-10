@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,55 +14,92 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
         header {
             background-color: #004466;
+            padding: 20px 10px;
             color: white;
-            padding: 20px 40px;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .logo-container img {
+            width: 180px;
+            height: auto;
+        }
+
+        .text-container {
             text-align: center;
+            flex: 1;
         }
-        header img {
-            max-height: 80px;
-            display: block;
-            margin: 10px auto;
+
+        .text-container h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
+
+        .text-container h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
         nav {
             text-align: center;
             background-color: #033649;
             padding: 10px;
+            position: sticky;
+            top: 0;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         section {
             padding: 40px;
             max-width: 1000px;
             margin: auto;
         }
-        .services, .testimonials {
+
+        .services,
+        .testimonials {
             background-color: #ffffff;
             padding: 30px;
             margin-top: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .testimonial {
             border-left: 4px solid #004466;
             padding-left: 15px;
             margin: 15px 0;
         }
+
         footer {
             background-color: #004466;
             color: white;
             text-align: center;
             padding: 20px;
         }
+
         .contact a {
             color: white;
             text-decoration: underline;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -71,6 +109,7 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+
         iframe {
             width: 100%;
             height: 300px;
@@ -79,83 +118,100 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <img src="assets/logo.jpeg" alt="Sharma Estates Logo">    
-    <h1>Sharma Estates</h1>
-    <h3>Real Estate & Property Consultant’s - 7 Years of Experience</h3>
-</header>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="assets/logo.jpeg" alt="Sharma Estates Logo">
+            </div>
+            <div class="text-container">
+                <h1>Sharma Estates</h1>
+                <h3>Real Estate & Property Consultants - 7 Years of Experience</h3>
+            </div>
+        </div>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#properties">Properties</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-<section id="about">
-    <h2>Why Choose Us</h2>
-    <p>Clients trust us because of our unwavering commitment to their best interests and our transparent communication throughout every real estate transaction. Our deep-rooted expertise in the Etawah & nearby market provides clients with invaluable insights into local trends, property values, and emerging opportunities.</p>
-    <p>We have consistently achieved top sales records within the region and are known for our personalized approach, ensuring each client finds the perfect property to meet their unique needs and aspirations.</p>
-</section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#properties">Properties</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Buying/Selling Residential Properties</li>
-        <li>Commercial Property Deals</li>
-        <li>Rentals</li>
-        <li>Investment Consulting</li>
-        <li>Documentation Help</li>
-        <li>Collaboration / Joint Ventures</li>
-        <li>Agricultural Land Deals</li>
-    </ul>
-</section>
+    <section id="about">
+        <h2>Why Choose Us</h2>
+        <p>Clients trust us because of our unwavering commitment to their best interests and our transparent
+            communication throughout every real estate transaction. Our deep-rooted expertise in the Etawah & nearby
+            market provides clients with invaluable insights into local trends, property values, and emerging
+            opportunities.</p>
+        <p>We have consistently achieved top sales records within the region and are known for our personalized
+            approach, ensuring each client finds the perfect property to meet their unique needs and aspirations.</p>
+    </section>
 
-<section id="properties" class="services">
-    <h2>Featured Properties</h2>
-    <ul>
-        <li>5000 sqft commercial space for sale at prime location in Etawah (50 ft wide front)</li>
-        <li>Duplex for sale - corner property on wide road, great community nearby</li>
-        <li>Plots available in main city with all modern amenities</li>
-    </ul>
-</section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Buying/Selling Residential Properties</li>
+            <li>Commercial Property Deals</li>
+            <li>Rentals</li>
+            <li>Investment Consulting</li>
+            <li>Documentation Help</li>
+            <li>Collaboration / Joint Ventures</li>
+            <li>Agricultural Land Deals</li>
+        </ul>
+    </section>
 
-<section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-        <strong>Utkarsh Shukla:</strong> Very helpful, negotiated well and got us through details and legalities nicely.
-    </div>
-    <div class="testimonial">
-        <strong>Mahendra Yadav:</strong> Very reasonable Rates (plot price), genuine land deals with proper paperwork, very helpful nature. Totally satisfied with their sites & price.
-    </div>
-    <div class="testimonial">
-        <strong>Mamta Sharma:</strong> I personally saw their property. They are humble and genuine. Properties are also very cost effective.
-    </div>
-</section>
+    <section id="properties" class="services">
+        <h2>Featured Properties</h2>
+        <ul>
+            <li>5000 sqft commercial space for sale at prime location in Etawah (50 ft wide front)</li>
+            <li>Duplex for sale - corner property on wide road, great community nearby</li>
+            <li>Plots available in main city with all modern amenities</li>
+        </ul>
+    </section>
 
-<section id="contact" class="services">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> <a href="tel:+918218107445">+91 8218107445</a></p>
-    <p><strong>Email:</strong> <a href="mailto:sharmasreality@gmail.com">sharmasreality@gmail.com</a></p>
-    <p><strong>Office:</strong> 355, Ashok Nagar, Etawah</p>
-    <a class="btn" href="https://wa.me/918218107445" target="_blank">Chat on WhatsApp</a>
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <strong>Utkarsh Shukla:</strong> Very helpful, negotiated well and got us through details and legalities
+            nicely.
+        </div>
+        <div class="testimonial">
+            <strong>Mahendra Yadav:</strong> Very reasonable Rates (plot price), genuine land deals with proper
+            paperwork, very helpful nature. Totally satisfied with their sites & price.
+        </div>
+        <div class="testimonial">
+            <strong>Mamta Sharma:</strong> I personally saw their property. They are humble and genuine. Properties are
+            also very cost effective.
+        </div>
+    </section>
 
-    <h3>Follow Us</h3>
-    <p>
-        <a href="https://www.facebook.com/share/1BnzCaqyE2/?mibextid=wwXIfr" target="_blank">Facebook</a> |
-        <a href="https://www.instagram.com/sharmas_reality?igsh=MWZ4emxuN3J5eDQxdg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-    </p>
+    <section id="contact" class="services">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> <a href="tel:+918218107445">+91 8218107445</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sharmasreality@gmail.com">sharmasreality@gmail.com</a></p>
+        <p><strong>Office:</strong> 355, Ashok Nagar, Etawah</p>
+        <a class="btn" href="https://wa.me/918218107445" target="_blank">Chat on WhatsApp</a>
 
-    <h3>Our Location</h3>
-    <iframe src="https://maps.google.com/maps?q=355,%20Ashok%20Nagar,%20Etawah&output=embed"></iframe>
-</section>
+        <h3>Follow Us</h3>
+        <p>
+            <a href="https://www.facebook.com/share/1BnzCaqyE2/?mibextid=wwXIfr" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/realestatewithanuj?igsh=Y2F6d3ZnMTJzNDNy&utm_source=qr"
+                target="_blank">Instagram</a>
+        </p>
 
-<footer>
-    <p>&copy; 2025 Sharma Estates. All rights reserved.</p>
-</footer>
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.632019240668!2d79.0325039!3d26.787997399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3975e1bdb727ad5f%3A0xf00192c8126fad63!2sSharma%20Estates!5e0!3m2!1sen!2sin!4v1746863818214!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sharma Estates. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
